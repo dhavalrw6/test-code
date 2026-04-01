@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme-Light-cream:#F2EAE0;
+    --theme-Pale-Cyan:#B4D3D9;
+    --theme-Mauve:#BDA6CE;
+    --theme-Dusty-Purple:#9B8EC7;
+    --theme-Light-Brown:#A98B76;
+    --theme-Playfair:"Playfair", serif;
+    --theme-Roboto:"Roboto", sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.col-12{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.py-100{
+    padding: 100px 0;
+}
+
+/* header start  */
+
+header {
+    padding: 20px;
+    background: var(--theme-Light-cream);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header .logo{
+    font-size: 28px;
+    font-family: var(--theme-Playfair);
+    color: var(--theme-Light-Brown);
+}
+
+header .logo span{
+    color: var(--theme-Dusty-Purple);
+}
+
+header ul li{
+    font-size: 18px;
+    margin: 0 1rem;
+    color: var(--theme-Light-Brown);
+}
+
+header ul li a{
+    transition: all .3s linear;
+}
+
+header ul li:hover a{
+    color: #9f6439;
+}
+
+
+
+/* hero  */
+.hero{
+    background: var(--theme-Light-Brown);
+}
+
+.hero .hero-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .hero-content h2{
+    font-size: 48px;
+    font-family: var(--theme-Roboto);
+    color: var(--theme-Light-cream);
+}
+
+.hero .hero-content p{
+    font-size: 21px;
+    font-family: var(--theme-Playfair);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.hero .hero-content a{
+    background: var(--theme-Light-cream);
+    color: var(--theme-Light-Brown);
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    margin-right: 1.5rem;
+    border: 1px solid var(--theme-Light-cream);
+    transition: all 0.3s linear;
+}
+
+.hero .hero-content a:first-child:hover{
+    background: #ecdcca;
+}
+
+.hero .hero-content a:last-child{
+    background: transparent;
+    color: var(--theme-Light-cream);
+}
+
+.hero .hero-content a:last-child:hover{
+    background: var(--theme-Light-cream);
+    color: var(--theme-Light-Brown);
+}
+
+.hero .hero-image{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.hero .hero-image img{
+    transition: all .3s linear;
+}
+
+.hero .hero-image:hover img{
+    transform: scale(1.02);
+}
+
+/* testimonials start  */
+
+.testimonials .testimonials-heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials .testimonials-heading h2{
+    font-size: 36px;
+    font-family: var(--theme-Playfair);
+    margin-bottom: .5rem;
+}
+
+.testimonials .testimonials-heading p{
+    font-size: 21px;
+    font-family: var(--theme-Roboto);
+}
+
+.testimonials .card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--theme-Light-cream);
+    transition: all 0.3s linear;
+}
+
+.testimonials .card:hover{
+    transform: translate(-5px,-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.testimonials .card .star{
+    color: gold;
+    margin-bottom: 1rem;
+}
+
+.testimonials .card p{
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
